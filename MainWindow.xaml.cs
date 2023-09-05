@@ -24,5 +24,30 @@ namespace CSharpWPF_GUI_Calculate
         {
             InitializeComponent();
         }
+
+        private void textSalary_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textExpenses_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textWant_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void submitBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textShow_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

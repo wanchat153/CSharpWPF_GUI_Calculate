@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:CSharpWPF_GUI_Calculate"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FFFEFEFE">
+        <TextBox x:Name="textSalary" HorizontalAlignment="Center" Height="37" Margin="0,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274" FontSize="20" FontWeight="Bold" TextAlignment="Center" Background="#FFC1FFC5" BorderThickness="2,2,2,2" BorderBrush="#FF5DC01B" Foreground="#FF295B08" TextChanged="textSalary_TextChanged"/>
+        <TextBox x:Name="textExpenses" HorizontalAlignment="Center" Height="37" Margin="0,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274" FontSize="20" FontWeight="Bold" TextAlignment="Center" BorderThickness="2,2,2,2" Background="#FFFFD2D2" BorderBrush="#FFA94A4A" Foreground="#FFA73939" TextChanged="textExpenses_TextChanged"/>
+        <TextBox x:Name="textWant" HorizontalAlignment="Center" Height="37" Margin="0,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="274" FontSize="20" FontWeight="Bold" TextAlignment="Center" BorderBrush="#FFF1B55B" Background="#FFFFE1BA" BorderThickness="2,2,2,2" Foreground="#FF903E0B" TextChanged="textWant_TextChanged"/>
+        <TextBox x:Name="textShow" HorizontalAlignment="Left" Height="58" Margin="520,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" FontSize="36" FontWeight="Bold" BorderBrush="#FF299A14" BorderThickness="2,2,2,2" Background="#FFCDFFC6" TextAlignment="Center" IsReadOnlyCaretVisible="True" Foreground="#FF125C01" TextChanged="textShow_TextChanged"/>
+        <Button x:Name="submitBtn" Content="Submit" HorizontalAlignment="Center" Height="49" Margin="0,238,0,0" VerticalAlignment="Top" Width="196" FontSize="22" FontWeight="Bold" BorderBrush="#FF535353" Background="#FFC9C9C9" BorderThickness="2,2,2,2" IsCancel="True" Click="submitBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="187,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="74" FontSize="24" FontWeight="Bold"><Run Language="th-th" Text="รายได้"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="173,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="88" FontSize="24" FontWeight="Bold"><Run Text="ราย"/><Run Language="th-th" Text="จ่าย"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="59,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="204" FontSize="24" FontWeight="Bold"><Run Language="th-th" Text="ราคาของที่อยากได้"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="553,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="107" FontSize="24" FontWeight="Bold"><Run Language="th-th" Text="บาท / วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="553,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="74" FontSize="24" FontWeight="Bold"><Run Language="th-th" Text="บาท"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="703,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="87" FontSize="36" FontWeight="Bold" Foreground="#FFD13939"><Run Language="th-th" Text="วัน"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="54,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="74" Width="461" FontSize="48" FontWeight="Bold" Foreground="#FFD13939"><Run Language="th-th" Text="คุณต้องเก็บเงินทั้งหมด"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="553,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="107" FontSize="24" FontWeight="Bold"><Run Language="th-th" Text="บาท / วัน"/></TextBlock>
+
     </Grid>
 </Window>
