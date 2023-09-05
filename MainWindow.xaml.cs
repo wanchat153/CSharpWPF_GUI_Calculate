@@ -42,7 +42,9 @@ namespace CSharpWPF_GUI_Calculate
 
         private void submitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            //ราคาของที่ต้องการ / (เงินเดือน - รายจ่าย)
+            textShow.Text = (int.Parse(textWant.Text) / ((int.Parse(textSalary.Text) - int.Parse(textExpenses.Text)))).ToString();
+            MessageBox.Show("Success");
         }
 
         private void textShow_TextChanged(object sender, TextChangedEventArgs e)
